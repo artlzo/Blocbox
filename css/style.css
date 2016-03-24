@@ -1,0 +1,52 @@
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+	color: #7D7C80;
+}
+
+h1 {
+	font-size: 62px;
+	font-weight: 600;
+}
+
+h2 {
+   font-size:32px;
+   font-weight: 500;
+   margin-bottom: 5px;
+ }
+
+ p {
+   font-size:20px;
+   line-height: 24px;
+ }
+
+/* GRID */
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+
+.container:before,
+ .container:after {
+   content: " ";
+   display: table;
+ }
+
+ .container:after {
+   clear: both;
+ }
+
+ .one-half, .one-third, .one-fourth {
+   width:96%;
+   float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 2% 20px;
+ }
