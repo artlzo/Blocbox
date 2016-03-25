@@ -7,6 +7,9 @@ body {
 	color: #7D7C80;
 }
 
+h1, h2 {
+	color: #0C77F8;
+}
 h1 {
 	font-size: 62px;
 	font-weight: 600;
@@ -50,3 +53,125 @@ h2 {
    min-height: 1px;
    margin:0 2% 20px;
  }
+
+ @media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+
+ }
+
+ @media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+
+   .one-half {
+      width: 46%;
+   }
+
+   .one-third {
+      width: 29.33333%;
+   }
+
+   .one-fourth {
+      width:21%;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .container {
+      width: 1170px;
+   }
+ }
+
+ @media (min-width: 1600px){
+   .container {
+      width:1440px;
+   }
+
+   header h1 {
+      font-size: 72px;
+   }
+
+   header p {
+      font-size: 24px;
+   }
+
+   .btn {
+      padding: 30px 60px;
+   }
+ }
+
+ /* HEADER */
+
+ header nav {
+   padding: 1em 0;
+ }
+
+header nav ul {
+   display: inline;
+   text-align: right;
+   float: right;
+   margin: 0;
+}
+
+header nav ul > li {
+   list-style: none;
+   display: inline-block;
+   margin: 0 15px;
+}
+
+header nav ul > li.btn-outline {
+   padding: 10px 15px;
+   border: 2px solid #0C77F8;
+   border-radius: 4px;
+}
+
+header nav ul > li.btn-outline:hover {
+   background: #0C77F8;
+ }
+
+ header nav ul > li > a {
+   color:#0C77F8;
+   text-decoration: none;
+ }
+
+ header nav ul > li.btn-outline:hover > a {
+   color:#ffffff;
+ }
+
+
+ header h1 {
+   margin:200px 0 0;
+ }
+
+ header p {
+   font-size: 20px;
+   line-height: 24px;
+   margin:10px 0 40px;
+   padding-right: 10px;
+ }
+
+ header img {
+   margin-top: 5px;
+ }
+
+ .btn {
+   border-radius: 4px;
+   color:#FFFFFF;
+   font-weight: 700;
+   text-decoration: none;
+   padding:12px 30px;
+   background: #0C77F8;
+   
+ }
+
+.benefits img {
+   width: 100%;
+   height: auto;
+   display: block;
+
+
+ }
+
