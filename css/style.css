@@ -7,7 +7,7 @@ body {
 	color: #7D7C80;
 }
 
-h1, h2 {
+h1, h2, h4 {
 	color: #0C77F8;
 }
 h1 {
@@ -24,6 +24,13 @@ h2 {
  p {
    font-size:20px;
    line-height: 24px;
+ }
+
+strong {
+   font-weight:bold;
+}
+.icon {
+   width:40px; 
  }
 
 /* GRID */
@@ -104,6 +111,9 @@ h2 {
  }
 
  /* HEADER */
+ .site-logo {
+   float:left;
+ }
 
  header nav {
    padding: 1em 0;
@@ -124,7 +134,7 @@ header nav ul > li {
 
 header nav ul > li.btn-outline {
    padding: 10px 15px;
-   border: 2px solid #0C77F8;
+   border: 1px solid #0C77F8;
    border-radius: 4px;
 }
 
@@ -143,7 +153,7 @@ header nav ul > li.btn-outline:hover {
 
 
  header h1 {
-   margin:200px 0 0;
+   margin:150px 0 0;
  }
 
  header p {
@@ -153,25 +163,177 @@ header nav ul > li.btn-outline:hover {
    padding-right: 10px;
  }
 
- header img {
-   margin-top: 5px;
+ header img .dashboard {
+   margin-top: 15px;
+   width: 100%;
+   height: auto;
  }
 
  .btn {
    border-radius: 4px;
    color:#FFFFFF;
-   font-weight: 700;
+   font-weight: 500;
    text-decoration: none;
    padding:12px 30px;
    background: #0C77F8;
    
  }
 
-.benefits img {
+/* //// BENEFITS ///// */
+
+.features {
    width: 100%;
    height: auto;
    display: block;
+ }
+
+ .benefits li {
+   list-style: none;
+ }
+
+.benefits li {
+   vertical-align: middle;
+}
+
+ .benefits p .icon {
+   margin-right: 20px;
+   margin-bottom: 20px;
+   padding-bottom:20px;
+   float: left;
+ }
+
+/* TESTIMONIALS */
+
+.testimonials {
+   text-align: center;
+   padding:4em 0;
+}
 
 
+.testimonials li {
+   list-style: none;
+}
+
+.testimonials blockquote {
+   text-align: left;
+   background:#EEE;
+   position: relative;
+   padding:15px;
+   width:auto;
+   margin:20px 10px;
+   border-radius: 4px;
+   font-size: 16px;
+ }
+ .testimonials blockquote:after {
+   top: 100%;
+   left: 13%;
+   border: solid transparent;
+   content: " ";
+   height: 0;
+   width: 0;
+   position: absolute;
+   pointer-events: none;
+   border-top-color: #EEE;
+   border-width: 10px;
+   margin-left: -10px;
+ }
+
+ .testimonials img {
+   border-radius: 100px;
+   width: 70px;
+   position: absolute;
+   left:4%;
+   display: inline-block;
+   margin:10px 20px 0 0;
+ }
+
+ .testimonials p.name {
+   display: inline-block;
+   position: absolute;
+   left:36%;
+   display: inline-block;
+   margin: 15px 15px 0 0;
+   text-align: left;
+   font-size: 14px;
+ }
+
+ .testimonials .down {
+   margin-top: 20px;
+ }
+
+/* //// PRICING TIERS*/
+
+.pricing {
+   text-align: center;
+   padding: 4em 0;
+}
+.pricing ul {
+   margin:0 auto;
+   padding:2.5em 0;
+ }
+
+ .pricing ul li {
+   list-style-type: none;
+ }
+
+.box {
+   padding:0 15px 15px;
+   border: 1px solid #979797;
+   min-height: 400px;
+   position: relative;
+   margin-top: 25px;
+}
+
+.box.middle {
+   min-height: 460px;
+   margin-top:0px;
+}
+
+.box h3 {
+   color: #ffffff;
+   text-transform: uppercase;
+   background-color: #0C77F8;
+   left: 0;
+   right: 0;
+   top: 0;
+   text-align: center;
+   margin: 0 -15px 30px;
+   padding:15px 0;
+}
+
+ .box h4 {
+   font-size: 50px;
+   font-weight: 500;
+   margin:30px 0 5px;
+ }
+
+ .box span{
+   font-size: 50px;
+   vertical-align: top;
+ }
+
+  .box h4 span.month {
+   font-weight:normal;
+   font-size:20px;
+   vertical-align: middle;
+   color: #7D7C80;
+  }
+
+  .box ul li {
+   font-size:18px;
+   margin-bottom:20px;
+   font-weight: 100;
+ }
+
+ .box .btn {
+   position:absolute;
+   bottom:20px;
+   left:20px;
+   right:20px;
+ }
+
+ .small {
+   font-size: 16px;
+   line-height: 15px;
  }
 
