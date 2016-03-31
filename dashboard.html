@@ -16,9 +16,12 @@
  	<link rel="stylesheet" href="css/style.css">
  	<link rel="stylesheet" href="css/font-awesome.css">
  	<link rel="stylesheet" href="css/animate.css">
+ 	<link rel="stylesheet" href="css/dropit.css">
  </head>
 
  <body class="dashboard">
+  <!-- RESPONSIVE  NAV -->
+ 	<a class="hamburger" id="menu" href="#">&#9776;</a>
  <!-- LEFT NAV -->
  	<nav id="left-nav" class="left-nav">
  		<a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
@@ -41,7 +44,16 @@
 		    	<div class="settings">
 		    		<img src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
 		    		<p>Art Lzo</p>
-		    		<a href="#"><i class="fa fa-cog"></i></a>
+		    		<ul class="account menu">
+		    			<li>
+		    				<a href="#" class="gear"><i class="fa fa-cog"></i></a>
+		    				<ul>
+			    				<li><a href="#"><i class="fa fa-file-o"></i> My Account</a></li>
+		 						<li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
+		 						<li><a href="#"><i class="fa fa-share-square-o"></i> Sign out</a></li>
+	 						</ul>
+		    			</li>
+		    		</ul>
 		    	</div>
 		    </div>
  	</nav>
@@ -51,13 +63,22 @@
 	 		<div class="container"> 
 	 			<div class="header">
 	 				<h1>All Items</h1>
-	 				<a href="#" class="btn">Add</a>
+	 				<ul class="menu">
+	 					<li>
+	 						<a href="#"class="btn">Add</a>
+	 						<ul>
+	 							<li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
+	 							<li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+	 							<li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+	 						</ul>
+	 					</li>
+	 				</ul>
 	 			</div>
 	 		</div>
 	 		<div class="container">
 		       <div class="content-item">
 		       	 <div class="item-box">
-		       	 	<img src="http://static.pexels.com/wp-content/uploads/2014/11/red-wine-tapas-3540-825x550.jpg">
+		       	 	<img src="https://images.unsplash.com/photo-1447877085163-3cce903855cd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c9466077853a47daa068e55a61ac3fa7">
 		       	 </div>
 		       </div>
 		       <div class="content-item">
@@ -76,7 +97,7 @@
 		       </div>
 		       <div class="content-item">
 		       	 <div class="item-box">
-		       	 	<img src="http://41.media.tumblr.com/90ef0b4692e0ba4df321674c3572e5ba/tumblr_ndyve8fmFa1tubinno1_r1_1280.jpg">
+		       	 	<img src="https://images.unsplash.com/photo-1459199698925-99516b9fe6a5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=58bf614c703f1b278c7632e889a414dc">
 		       	 </div>
 		       </div>
 		       <div class="content-item">
@@ -114,6 +135,13 @@
 		    </div>
 		 </section>  
  	</main>
-
+ 	<script src="js/jquery-2.2.2.min.js"></script>
+   <script src="js/dropit.js"></script>
+   <script type="text/javascript">
+     $(".menu").dropit();
+     $( "#menu" ).click(function() {
+         $("#left-nav").toggleClass("open", 200);
+     });
+   </script>
  </body>
  </html>
