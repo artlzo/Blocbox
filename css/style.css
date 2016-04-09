@@ -1,3 +1,4 @@
+
 html, body {
 	overflow-x: hidden;
 }
@@ -32,8 +33,6 @@ strong {
 .icon {
    width:40px; 
  }
-
-
 
 /* ================================ 
 Grid
@@ -70,6 +69,8 @@ Grid
 ==================================== */
  header .site-logo {
    float:left;
+   width: 165px;
+   margin-top: 4px;
  }
 
  header nav {
@@ -108,7 +109,6 @@ header nav ul > li.btn-outline:hover {
    color:#ffffff;
  }
 
-
  header h1 {
    margin:150px 0 0;
  }
@@ -124,7 +124,6 @@ header nav ul > li.btn-outline:hover {
    margin-top: 15px;
    width: 100%;
    height: auto;
-
  }
 
  .btn {
@@ -133,9 +132,9 @@ header nav ul > li.btn-outline:hover {
    font-weight: 500;
    text-decoration: none;
    padding:12px 30px;
-   background: #0C77F8;
-   
+   background: #0C77F8;  
  }
+
 /* ================================= 
  Benefits
 ==================================== */
@@ -167,11 +166,11 @@ header nav ul > li.btn-outline:hover {
 .testimonials {
    text-align: center;
    padding:4em 0;
-   margin-bottom: 40px;
+   margin-bottom: 50px;
 }
 
 .testimonials p {
-   padding: 0 80px 0 80px;
+   padding: 0 120px 0 120px;
 }
 
 .testimonials blockquote {
@@ -180,7 +179,7 @@ header nav ul > li.btn-outline:hover {
    position: relative;
    padding:30px;
    width:auto;
-   margin:2em 10em 1em 10em;
+   margin:2em 14em 1em 14em;
    border-radius: 4px;
  }
 
@@ -198,25 +197,26 @@ header nav ul > li.btn-outline:hover {
    margin-left: -10px;
  }
 
- .testimonials img {
-   border-radius: 100px;
-   width: 70px;
-   position: absolute;
-   left:10%;
-   top:110%;
-   display: inline-block;
-   margin:10px 20px 0 -10px;
- }
-
- .testimonials p.name {
-   display: inline-block;
-   position: absolute;
-   top: 108%;
-   left:10%;
-   display: inline-block;
-   margin: 20px 20px 0 0;
-   text-align: left;
- }
+  .testimonials img {
+    border-radius: 100px;
+    width: 70px;
+    position: absolute;
+    left:10%;
+    top:110%;
+    display: inline-block;
+    margin:10px 20px 0 -10px;
+  }
+ 
+  .testimonials p.name {
+    display: inline-block;
+    position: absolute;
+    top: 108%;
+    left:10%;
+    display: inline-block;
+    margin: 20px 20px 0 0;
+    text-align: left;
+    font-size: 1em;
+  }
 
 /* ================================= 
  Pricing Tiers
@@ -244,8 +244,8 @@ header nav ul > li.btn-outline:hover {
 }
 
 .box.middle {
-   min-height: 460px;
    margin-top:0px;
+   min-height: 430px;
 }
 
 .box h3 {
@@ -303,32 +303,40 @@ footer {
    background-color: #EEEEEE;
    background-image: linear-gradient(to top,
       #0C77F8 0%, #0C77F8 50%, #EEEEEE 50%, #EEEEEE 100%);
-   color: #;
-   height: 180px;
+
    position: relative;
    overflow: hidden;
    z-index: 0;
  }
+
  footer p, footer nav ul {
    font-size:14px;
    font-weight:100;
    text-align: center;
    margin: 10px auto 0;
  }
+
  footer nav ul li {
    list-style-type: none;
    display: inline;
-
+   padding-right: 8px;
  }
+
  footer nav ul li a {
    color:#7D7C80;
    text-decoration: none;
+   font-size: 12px;
+ }
+
+ footer nav ul li a:hover { 
+    color:#0C77F8;
  }
  footer .right-footer-block {
    background-color: transparent;
    height: 100px;
  }
- footer .logo{
+
+ footer .logo {
    margin: 0 auto;
    display: block;
  }
@@ -344,8 +352,7 @@ footer {
 @media (max-width: 992px) {
 
    header .site-logo {
-      margin-top:20px;
-      
+      margin-top:13px;
    }
 
    header {
@@ -364,21 +371,23 @@ footer {
 
    header .one-half {
       float:none;
-
    }
 
    header .dashboard-image img {
       margin-top: 20px;
-
+      max-width: 100%;
    }
 
    .testimonials blockquote {
-      margin: 40px;
+      margin: 30px;
    }
+
+  .testimonials .info {
+   padding: 0 25px 0 25px;
+  }
 
    .box {
    border: 1px solid #979797;
-   min-height: 400px;
    position: relative;
    margin-right: 50px;
    margin-left: 50px;
@@ -386,20 +395,42 @@ footer {
 
    .pricing {
       padding: 0 30px 0 30px;
-
    }
 
-     footer  nav ul {
-      margin-bottom:8px;
+  .pricing ul.container {
+     margin-top: -40px;
    }
+
+  .small {
+    margin:2px 25px 40px 25px;
+    font-size: 12px;
+    opacity: 0.7;
+    }
+  
+  footer .logo {
+     padding: 2em 1.5em;
+     width: 165px;
+   }
+
+  footer nav ul {
+      margin-bottom:10px;
+      padding-left: 0;
+   }
+
+  footer nav ul li {
+   list-style-type: none;
+   display: inline-block;
+   padding: 10px 5px 5px 5px;
+ }
 
 }
 
 @media (max-width: 600px)  {
    header .site-logo {
       float:none;
-
+      width: 225px;
    }
+
    header h1 {
       font-size: 36px;
       margin-top:40px;
@@ -418,7 +449,6 @@ footer {
    .benefits p {
       text-align: center;
       padding: 0 30px 0 30px;
-
    }
 
    .benefits p .icon {
@@ -436,20 +466,40 @@ footer {
       padding: 0 5px 0 5px;
    }
 
-   .pricing ul.container {
-      margin-top: 10px;
-   }
+   .box.middle {
+     min-height: 380px;
+  }
 
    .small {
       margin-top: -20px;
    }
 
+   .copyright-block {
+    margin-top: 24px;
+   }
+
+    footer p, footer nav ul {
+      margin-top: -6px;
+    }
+
+    footer nav ul li a {
+      font-size: 14px;
+    }
+
+   footer .logo {
+     width: 180px;
+   }
 
 }
 
 @media (min-width: 768px) {
    .container {
       width: 750px;
+   }
+
+  .pricing .info {
+    margin:10px 25px -5px;
+    padding: 0 4em;
    }
  }
 
@@ -470,32 +520,37 @@ footer {
       width:21%;
    }
 
-   footer{
+   footer {
      background-color: #EEEEEE;
      background-image: linear-gradient(to left,
-        #0C77F8 0%, #0C77F8 33.33337%, #EEEEEE 33.33337%, #EEEEEE 100%);
+      #0C77F8 0%, #0C77F8 33.33337%, #EEEEEE 33.33337%, #EEEEEE 100%);
      height: 100px;
    }
-   footer p, footer nav ul{
+
+   footer p, footer nav ul {
      padding: 2em 0;
      text-align: left;
      margin-bottom: 10px;
    }
+
+   .middle-footer-block {
+    margin-top: 3px;
+   }
+
    footer .right-footer-block {
      background-color: #0C77F8;
    }
-   footer .logo{
+
+   footer .logo {
      padding: 2em 0 2em 1.5em;
+     width: 165px;
    }
-
-
  }
 
  @media (min-width: 1200px) {
    .container {
       width: 1170px;
    }
-
  }
 
 /* Dashboard */
@@ -548,17 +603,17 @@ footer {
  }
 
 @media (min-width:992px) {
-.left-nav {
-  height: 100vh;
-  width:16%;
-  background: #EEEEEE;
-  float:left;
-  position: fixed;
-  display:block;
-  transform: translate(0,0);
-  -webkit-transform: translate(0,0); /** Chrome & Safari **/
-  -o-transform: translate(0,0); /** Opera **/
-  -moz-transform: translate(0,0); /** Firefox **/
+  .left-nav {
+    height: 100vh;
+    width:16%;
+    background: #EEEEEE;
+    float:left;
+    position: fixed;
+    display:block;
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
 }
 
 .left-nav.open {
@@ -574,7 +629,6 @@ footer {
 
 }
 
-
 .left-nav .site-logo {
    padding: 20px 10px;
    background: #EEEEEE;
@@ -584,7 +638,7 @@ footer {
 }
 
 .left-nav .site-logo > img {
-   width:140px;
+   width:42px;
 }
 
 .left-nav .items {
@@ -602,6 +656,7 @@ footer {
 .left-nav .items ul {
    margin:0 0 40px;
    padding: 0;
+   font-size: 0.85em;
 }
 
 .left-nav .items ul li {
@@ -616,8 +671,11 @@ footer {
 }
 
 .left-nav .items ul li a.active {
-   color:#0C77F8;
-   
+   color:#0C77F8; 
+}
+
+.left-nav .items ul li a:hover {
+   color:#0C77F8; 
 }
 
 .left-nav .items ul li a i {
@@ -638,7 +696,7 @@ footer {
    padding-bottom: 10px;
  }
 
- .left-nav .settings img {
+ .left-nav .settings .avatar {
    height: 35px;
    width: 35px;
    border-radius: 50%;
@@ -668,7 +726,7 @@ footer {
  /* CONTENT */
 
  .content {
-   padding: 6em 1% 1.5em;
+   padding: 1.5em 1% 1.5em;
    float: right;
    width: 98%;
    position: relative;
@@ -721,6 +779,17 @@ footer {
      float:left;
      display:block;
    }
+  
+ }
+
+ @media (max-width:767px) {
+    .content .header h1 {
+    display: none;
+  }
+    #rows:before {
+    margin-top: 40px;
+  }
+
  }
 
  @media (min-width:768px) {
@@ -737,6 +806,9 @@ footer {
      width:31.33333%;
      margin:0 1% 25px;
    }
+   .content .header h1 {
+    margin: 10px 22px 30px 276px;
+  }
  }
 
  @media (min-width:992px) {
@@ -754,6 +826,10 @@ footer {
      width:23%;
      margin:0 1% 25px;
    }
+  
+  .content .header h1 {
+     margin: 0 0 30px;
+  }
  }
 
  .item-box > img {

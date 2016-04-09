@@ -10,35 +10,39 @@
 /* These styles assume you are using ul and li */
 .dropit {
   list-style: none;
-	 padding: 0;
+	padding: 0;
 	margin: 15px 0 0;
   float: right;
-    display: inline-block;
 }
 
 .dropit .dropit-trigger { 
-  position: relative; 
+  position: relative;
+
 }
 
 .dropit .dropit-submenu {
-    position: absolute;
-    top: 100%;
-    right: 0; /* dropdown left or right */
-    z-index: 1000;
-    display: none;
-    min-width: 100px;
-    list-style: none;
-    padding: 20px;
-    margin: 20px 0 0;
-
+  position: absolute;
+  top: 108%;
+  right: 0; /* dropdown left or right */
+  z-index: 1000;
+  display: none;
+  min-width: 100px;
+  list-style: none;
+  padding: 20px;
+  margin: 20px 0 0;
 }
 
 .dropit .dropit-open .dropit-submenu { 
-    display: block; 
-    background: #FFFFFF;
-    box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.20);
-    border-radius: 4px
+  display: block; 
+  background: #FFFFFF;
+  box-shadow: 0px -1px 3px 0px rgba(0,0,0,0.20);
+  border-radius: 4px;
+}
 
+.dropit .dropit-open .dropit-submenu img {
+  position: absolute;
+  top: -7%;
+  left: 78%;
 }
 
 .dropit .dropit-open .dropit-submenu:after {
@@ -48,7 +52,6 @@
   border-width: 0 8px 8px;
   border-color: #FFFFFF transparent;
   display: block;
-  width: 0;
   z-index: 1;
   top: -8px;
   right: 10px;
@@ -57,6 +60,7 @@
 .dropit .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 20px;
+
 }
 
  .dropit .dropit-open .dropit-submenu li:last-child {
@@ -68,6 +72,7 @@
   text-decoration: none;
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
   font-weight:400;
+  
  }
 
 /* menu-2 */
@@ -81,24 +86,28 @@
 }
 
 .account.dropit .dropit-submenu {
-    position: absolute;
-    top: -148px;
-    right: -20px; /* dropdown left or right */
-    z-index: 1000;
-    display: none;
-    min-width: 100px;
-    list-style: none;
-    padding: 30px 35px;
-    margin: -22px 0 0;
+  position: absolute;
+  top: -168px;
+  right: -20px; /* dropdown left or right */
+  z-index: 1000;
+  display: none;
+  min-width: 100px;
+  list-style: none;
+  padding: 30px 35px;
+  margin: -22px 0 0;
+}
 
+.account.dropit .dropit-open .dropit-submenu img  {
+  position: absolute;
+  top: 100%;
+  left: 72%;
 }
 
 .account.dropit .dropit-open .dropit-submenu { 
-    display: block; 
-    background: #FFFFFF;
-    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.30);
-    border-radius: 4px;
-
+  display: block; 
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.30);
+  border-radius: 4px;
 }
 
 .account.dropit .dropit-open .dropit-submenu:after {
@@ -113,6 +122,7 @@
   right: 29px;
   top: 157px;
  }
+ 
 
 .acccount.dropit .dropit-open .dropit-submenu li {
   display: inline-block;
