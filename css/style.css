@@ -224,7 +224,7 @@ header nav ul > li.btn-outline:hover {
 
 .pricing {
    text-align: center;
-   padding: 4em 0;
+   padding: 2em 0;
 }
 .pricing ul {
    margin:0 auto;
@@ -463,7 +463,7 @@ footer {
    }
 
    .pricing {
-      padding: 80px 5px 0 5px;
+      padding: 40px 5px 0 5px;
    }
 
    .box.middle {
